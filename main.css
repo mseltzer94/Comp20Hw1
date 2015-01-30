@@ -1,0 +1,23 @@
+body{
+    background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%
+    	
+}
+entry {
+    font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    text-shadow: true;
+    border: 10px;
+    border-radius: 5px;
+    background: #2bbec7;
+    
+}
+    
+th {
+    margin:auto;
+    font: bold 15px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+    text-align: center;
+
+}
