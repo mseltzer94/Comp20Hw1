@@ -9,6 +9,7 @@ img {
     position: absolute;
     z-index: 1;
     width:200px;
+    height:284px;
     opacity:0.818;
 }
 
@@ -21,10 +22,10 @@ td:nth-child(1):hover{
 
 #pic1{
 /*    -webkit-animation:movein 5s;*/
-    opacity:0.5
+    opacity:0.75;
 }
 #pic2{
-    -webkit-animation:movein 4s;
+    -webkit-animation:movein 3s;
 }
 #pic3{
     -webkit-animation:movein 1s;
@@ -57,33 +58,32 @@ imgtext {
     -o-animation:      fade 10s; 
     animation:         fade 10s;   
     top: 250px;
-    color:#000;
-    background: none;
+    color:#fff;
     letter-spacing: 1px; 
     font-weight: 700;
-    -webkit-animation: color_to_grey 5s; 
-    -moz-animation:    color_to_grey 5s; 
-    -o-animation:      color_to_grey 5s; 
-    animation:         color_to_grey 5s; 
+    -webkit-animation: color_change 5s; 
+    -moz-animation:    color_change 5s; 
+    -o-animation:      color_change 5s; 
+    animation:         color_change 5s; 
 
 }
 
 
-@-webkit-keyframes color_to_grey {
-  0%   { color:#fff; }
-  100% { color:#000;}
+@-webkit-keyframes color_change {
+  0%   { color:#000; }
+  100% { color:#fff;}
 }
 @-moz-keyframes color_to_grey {
-  0%   { color:#fff; }
-  100% { color:#000;}
+    0% { color:#000; }
+  100% { color:#fff;}
 }
 @-o-keyframes color_to_grey {
-  0%   { color:#fff; }
-  100% { color:#000;}
+  0%   { color:#000; }
+  100% { color:#fff;}
 }
 @keyframes color_to_grey {
-  0%   { color:#fff; }
-  100% { color:#000;}
+  0%   { color:#000; }
+  100% { color:#fff;}
 }
 
 
