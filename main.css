@@ -8,20 +8,36 @@ entry {
 img {
     position: absolute;
     z-index: 1;
-    width:200px;
+    width:auto;
     height:284px;
     opacity:0.818;
 }
 
-/*
-td:nth-child(1):hover{
-    -webkit-animation:movein .5s;
-    opacity:.5;
+img:hover{
+     opacity: 0.4;
+    -webkit-animation: fadeout 5s; 
+    -moz-animation:    fadeout 5s; 
+    -o-animation:      fadeout 5s; 
+    animation:         fadeout 5s;   
 }
-*/
+
+div:not(.imgtext){
+    width:67%;
+    margin: auto;
+}
+
+head.p{
+    font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    text-shadow: true;
+    border: 10px;
+}
+
+p {
+    word-wrap: normal;
+}
+
 
 #pic1{
-/*    -webkit-animation:movein 5s;*/
     opacity:0.75;
 }
 #pic2{
@@ -36,27 +52,48 @@ from {-webkit-transform:translate(0px, 1000px)}
   to   {-webkit-transform:translate(0px, 0px)}
 }
 
+h1{
+    text-align: center;   
+}
+#title {
+     font: bold 15px/10px Helvetica, Sans-Serif; 
+}
 
-imgtext {
+a:link{
+text-decoration: none;   
+}
+.imgtext {
     position: relative;
     z-index: 2;
     top:200px;
     color: white; 
     font: bold 24px/15px Helvetica, Sans-Serif; 
     letter-spacing: -1px;  
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.7);
+    background: rgb(70, 63, 63);
     padding: 5px; 
-    -webkit-animation: fade 5s; 
-    -moz-animation:    fade 5s; 
-    -o-animation:      fade 5s; 
-    animation:         fade 5s;   
+    -webkit-animation: fadein 5s; 
+    -moz-animation:    fadein 5s; 
+    -o-animation:      fadein 5s; 
+    animation:         fadein 5s; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.titletext{
+    color: white; 
+    font: bold 24px/15px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(70, 63, 63);
+    padding: 5px; 
+    -webkit-animation: fadein 5s; 
+    -moz-animation:    fadein 5s; 
+    -o-animation:      fadein 5s; 
+    animation:         fadein 5s;     
 }
 #name{
-    -webkit-animation: fade 10s; 
-    -moz-animation:    fade 10s; 
-    -o-animation:      fade 10s; 
-    animation:         fade 10s;   
+    -webkit-animation: fadein 10s; 
+    -moz-animation:    fadein 10s; 
+    -o-animation:      fadein 10s; 
+    animation:         fadein 10s;   
     top: 250px;
     color:#fff;
     letter-spacing: 1px; 
@@ -65,7 +102,11 @@ imgtext {
     -moz-animation:    color_change 5s; 
     -o-animation:      color_change 5s; 
     animation:         color_change 5s; 
+    background: rgba(106, 106, 106, 0.7);
 
+}
+#highlight{
+    font-weight: bold;
 }
 
 
@@ -73,23 +114,40 @@ imgtext {
   0%   { color:#000; }
   100% { color:#fff;}
 }
-@-moz-keyframes color_to_grey {
+@-moz-keyframes color_change {
     0% { color:#000; }
   100% { color:#fff;}
 }
-@-o-keyframes color_to_grey {
+@-o-keyframes color_change {
   0%   { color:#000; }
   100% { color:#fff;}
 }
-@keyframes color_to_grey {
+@keyframes color_change {
   0%   { color:#000; }
   100% { color:#fff;}
+}
+
+@-webkit-keyframes fadeout {
+  0%   { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+@-moz-keyframes fade {
+  0%   { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+@-o-keyframes fade {
+  0%   { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+@keyframes fade {
+  0%   { opacity: 1; }
+  100% { opacity: 0.4; }
 }
 
 
 
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fadein {
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
