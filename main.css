@@ -1,7 +1,6 @@
 entry {
     border: 10px;
-    font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-    text-shadow: true;    
+    font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;   
 }
 img {
     height:284px;
@@ -24,7 +23,6 @@ div:not(.imgtext){
 .p{
     border: 10px;
     font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-    text-shadow: true;
 }
 
 p {
