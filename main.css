@@ -1,35 +1,30 @@
 entry {
-    font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-    text-shadow: true;
     border: 10px;
-   
-    
+    font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    text-shadow: true;    
 }
 img {
-    position: absolute;
-    z-index: 1;
-    width:auto;
     height:284px;
     opacity:0.818;
+    position: absolute;
+    width:auto;
+    z-index: 1;
 }
 
-img:hover{
-     opacity: 0.4;
-    -webkit-animation: fadeout 5s; 
-    -moz-animation:    fadeout 5s; 
-    -o-animation:      fadeout 5s; 
-    animation:         fadeout 5s;   
+img:hover:not(.home){
+    opacity: 0.4;
 }
 
 div:not(.imgtext){
-    width:67%;
     margin: auto;
+    width:67%;
+    
 }
 
-head.p{
+.p{
+    border: 10px;
     font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
     text-shadow: true;
-    border: 10px;
 }
 
 p {
@@ -37,76 +32,74 @@ p {
 }
 
 
-#pic1{
+.home{
     opacity:0.75;
 }
-#pic2{
-    -webkit-animation:movein 3s;
+.bio{
+    -webkit-animation:movein 2s;
+    -moz-animation:movein 2s;
+    -o-animation:movein 2s;
 }
-#pic3{
+.resume{
     -webkit-animation:movein 1s;
+    -moz-animation:    fadeout 5s; 
+    -o-animation:      fadeout 5s;
 }
 
 @-webkit-keyframes movein{
-from {-webkit-transform:translate(0px, 1000px)}
-  to   {-webkit-transform:translate(0px, 0px)}
+from {transform:translate(0px, 1000px)}
+  to   {transform:translate(0px, 0px)}
+}
+@-moz-keyframes movein{
+from {transform:translate(0px, 1000px)}
+  to   {transform:translate(0px, 0px)}
+}
+@-o-keyframes movein{
+from {transform:translate(0px, 1000px)}
+  to   {transform:translate(0px, 0px)}
 }
 
 h1{
     text-align: center;   
-}
-#title {
-     font: bold 15px/10px Helvetica, Sans-Serif; 
 }
 
 a:link{
 text-decoration: none;   
 }
 .imgtext {
-    position: relative;
-    z-index: 2;
-    top:200px;
-    color: white; 
-    font: bold 24px/15px Helvetica, Sans-Serif; 
-    letter-spacing: -1px;  
-    background: rgb(70, 63, 63);
-    padding: 5px; 
     -webkit-animation: fadein 5s; 
     -moz-animation:    fadein 5s; 
     -o-animation:      fadein 5s; 
-    animation:         fadein 5s; 
-    margin-top: 10px;
+    background: rgb(70, 63, 63);
+    color: white; 
+    font: bold 24px/15px Helvetica, Sans-Serif; 
+    letter-spacing: -1px; 
     margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px; 
+    position: relative;
+    top:200px;   
+    z-index: 2;
 }
 .titletext{
+    background: rgb(70, 63, 63);
     color: white; 
     font: bold 24px/15px Helvetica, Sans-Serif; 
     letter-spacing: -1px;  
-    background: rgb(70, 63, 63);
     padding: 5px; 
     -webkit-animation: fadein 5s; 
     -moz-animation:    fadein 5s; 
-    -o-animation:      fadein 5s; 
-    animation:         fadein 5s;     
+    -o-animation:      fadein 5s;  
 }
-#name{
-    -webkit-animation: fadein 10s; 
-    -moz-animation:    fadein 10s; 
-    -o-animation:      fadein 10s; 
-    animation:         fadein 10s;   
-    top: 250px;
+.imgtext#name{
+     background: rgb(70, 63, 63);
     color:#fff;
-    letter-spacing: 1px; 
     font-weight: 700;
+    top: 250px;
+    letter-spacing: 1px; 
     -webkit-animation: color_change 5s; 
     -moz-animation:    color_change 5s; 
     -o-animation:      color_change 5s; 
-    animation:         color_change 5s; 
-    background: rgba(106, 106, 106, 0.7);
-
-}
-#highlight{
-    font-weight: bold;
 }
 
 
@@ -169,8 +162,6 @@ th {
     font: bold 15px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
     color: #4f6b72;
     text-align: center;
-   
-
 }
 td {
     width:200px;
