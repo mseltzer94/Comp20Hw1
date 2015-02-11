@@ -33,29 +33,6 @@ p {
 .home{
     opacity:0.75;
 }
-.bio{
-    -webkit-animation:movein 2s;
-    -moz-animation:movein 2s;
-    -o-animation:movein 2s;
-}
-.resume{
-    -webkit-animation:movein 1s;
-    -moz-animation:    fadeout 5s; 
-    -o-animation:      fadeout 5s;
-}
-
-@-webkit-keyframes movein{
-from {transform:translate(0px, 1000px)}
-  to   {transform:translate(0px, 0px)}
-}
-@-moz-keyframes movein{
-from {transform:translate(0px, 1000px)}
-  to   {transform:translate(0px, 0px)}
-}
-@-o-keyframes movein{
-from {transform:translate(0px, 1000px)}
-  to   {transform:translate(0px, 0px)}
-}
 
 h1{
     text-align: center;   
@@ -85,9 +62,6 @@ text-decoration: none;
     font: bold 24px/15px Helvetica, Sans-Serif; 
     letter-spacing: -1px;  
     padding: 5px; 
-    -webkit-animation: fadein 5s; 
-    -moz-animation:    fadein 5s; 
-    -o-animation:      fadein 5s;  
 }
 .imgtext#name{
      background: rgb(70, 63, 63);
@@ -95,65 +69,9 @@ text-decoration: none;
     font-weight: 700;
     top: 250px;
     letter-spacing: 1px; 
-    -webkit-animation: color_change 5s; 
-    -moz-animation:    color_change 5s; 
-    -o-animation:      color_change 5s; 
+    animation:      color_change 5s; 
 }
 
-
-@-webkit-keyframes color_change {
-  0%   { color:#000; }
-  100% { color:#fff;}
-}
-@-moz-keyframes color_change {
-    0% { color:#000; }
-  100% { color:#fff;}
-}
-@-o-keyframes color_change {
-  0%   { color:#000; }
-  100% { color:#fff;}
-}
-@keyframes color_change {
-  0%   { color:#000; }
-  100% { color:#fff;}
-}
-
-@-webkit-keyframes fadeout {
-  0%   { opacity: 1; }
-  100% { opacity: 0.4; }
-}
-@-moz-keyframes fade {
-  0%   { opacity: 1; }
-  100% { opacity: 0.4; }
-}
-@-o-keyframes fade {
-  0%   { opacity: 1; }
-  100% { opacity: 0.4; }
-}
-@keyframes fade {
-  0%   { opacity: 1; }
-  100% { opacity: 0.4; }
-}
-
-
-
-
-@-webkit-keyframes fadein {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-moz-keyframes fade {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-o-keyframes fade {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@keyframes fade {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
 
 th {
     margin:auto;
