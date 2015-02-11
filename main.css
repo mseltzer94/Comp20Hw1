@@ -42,9 +42,6 @@ a:link{
 text-decoration: none;   
 }
 .imgtext {
-    -webkit-animation: fadein 5s; 
-    -moz-animation:    fadein 5s; 
-    -o-animation:      fadein 5s; 
     background: rgb(70, 63, 63);
     color: white; 
     font: bold 24px/15px Helvetica, Sans-Serif; 
