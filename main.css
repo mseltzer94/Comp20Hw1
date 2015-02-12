@@ -56,9 +56,11 @@ text-decoration: none;
 .titletext{
     background: rgb(70, 63, 63);
     color: white; 
-    font: bold 24px/15px Helvetica, Sans-Serif; 
+    font: bold 20px/30px Helvetica, Sans-Serif; 
     letter-spacing: -1px;  
     padding: 5px; 
+    align-content: center;
+    opacity: 0.5
 }
 .imgtext#name{
      background: rgb(70, 63, 63);
@@ -79,4 +81,3 @@ th {
 td {
     width:200px;
 }
-
